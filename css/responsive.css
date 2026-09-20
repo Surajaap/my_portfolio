@@ -1,0 +1,348 @@
+/* =========================================================
+   RESPONSIVE DESIGN
+
+   NOTE: #three-background ke saare rules ab sirf style.css
+   me hain. Yahan se hata diye gaye hain kyunki canvas ko
+   position:fixed / 100vw karne se wo container se alag ho
+   jata tha aur phone par dikhna band ho jata tha.
+========================================================= */
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+    .nav-links {
+        gap: 24px;
+    }
+
+    .nav-links a {
+        font-size: 0.78rem;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        gap: 50px;
+
+        min-height: auto;
+
+        padding-top: 140px;
+        padding-bottom: 80px;
+
+        text-align: center;
+    }
+
+    .hero-content {
+        margin: 0 auto;
+    }
+
+    .hero-text {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .hero-actions,
+    .hero-tech {
+        justify-content: center;
+    }
+
+    .hero-visual {
+        width: min(420px, 80vw);
+        margin-top: 30px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-grid,
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE NAVIGATION
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        height: 72px;
+        padding: 0 6%;
+    }
+
+    .logo {
+        font-size: 0.95rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .section {
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding: 80px 24px;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+        font-size: clamp(2.3rem, 10vw, 3.2rem);
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding: 110px 24px 60px;
+
+        box-sizing: border-box;
+        overflow: visible;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.7rem, 13vw, 4rem);
+        line-height: 1.04;
+        letter-spacing: -0.045em;
+    }
+
+    .hero-text {
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 0.88rem;
+        line-height: 1.75;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .hero-tech {
+        gap: 6px;
+        justify-content: center;
+    }
+
+    .hero-tech span {
+        padding: 6px 9px;
+        font-size: 0.62rem;
+    }
+
+    .hero-visual {
+        width: min(330px, 88vw);
+        max-width: 330px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .data-core {
+        width: 105px;
+        height: 105px;
+
+        font-size: 1.5rem;
+    }
+
+    .orbit-node {
+        min-width: auto;
+        min-height: 30px;
+
+        padding: 5px 7px;
+
+        font-size: 0.48rem;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding: 0 24px 60px;
+
+        box-sizing: border-box;
+    }
+
+    .stat {
+        padding: 18px 12px;
+    }
+
+    .stat strong {
+        font-size: 1.45rem;
+    }
+
+    .stat span {
+        font-size: 0.66rem;
+    }
+
+    .projects-grid,
+    .skills-grid,
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .skill-card,
+    .education-card {
+        padding: 25px;
+    }
+
+    .experience-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+
+        padding: 28px 24px;
+    }
+
+    .contact-wrapper h2 {
+        font-size: clamp(2.4rem, 11vw, 3.5rem);
+    }
+
+    .contact-actions {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+
+        min-height: 120px;
+
+        text-align: center;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .hero {
+        width: 100%;
+        max-width: 100%;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-visual {
+        width: 285px;
+        max-width: 285px;
+    }
+
+    .data-core {
+        width: 90px;
+        height: 90px;
+    }
+
+    .stats {
+        width: 100%;
+        max-width: 100%;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .stat {
+        padding: 15px 8px;
+    }
+
+    .section {
+        width: 100%;
+        max-width: 100%;
+
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE HORIZONTAL OVERFLOW FIX
+========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+
+    .hero,
+    .section,
+    .stats,
+    .projects-grid,
+    .skills-grid,
+    .education-grid,
+    .experience-card,
+    .about-content,
+    .contact-wrapper,
+    .footer-content {
+        max-width: 100%;
+    }
+}

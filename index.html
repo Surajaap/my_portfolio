@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <meta name="description"
+        content="Suraj Patel — Data Science portfolio showcasing data analytics, machine learning, projects, skills and technical work.">
+
+    <meta name="author" content="Suraj Patel">
+
+    <title>Suraj Patel | Data Science Portfolio</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- =====================================================
+         IMPORT MAP  (ye hi asli fix hai)
+
+         Browser ko batata hai ki "three" kahan se load karna hai.
+         Iske bina module chup-chaap fail ho jata hai — isiliye
+         phone par background dikh hi nahi raha tha.
+
+         Agar niche wali local file kaam na kare, to us line ko
+         hata kar CDN wali line use kar lena.
+    ====================================================== -->
+
+    <script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+
+    <!--
+        CDN version (backup) — upar wali line hata kar ye use karo:
+
+        { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+    -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+
+<body>
+
+    <!-- =====================================================
+         THREE.JS BACKGROUND
+    ====================================================== -->
+
+    <div id="three-background" aria-hidden="true"></div>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            SURAJ <span>PATEL</span>
+        </a>
+
+        <nav class="nav-links">
+
+            <a href="#home" class="active">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <p class="eyebrow">
+                    DATA SCIENCE • ANALYTICS • AI
+                </p>
+
+                <h1>
+                    Turning Data
+                    <span>👉 Insights</span>
+                </h1>
+
+                <p class="hero-text">
+                    I'm Suraj Patel, a Data Science professional focused on
+                    data analytics, machine learning, and building practical
+                    solutions that transform data into meaningful insights.
+                </p>
+
+
+                <div class="hero-actions">
+
+                    <a href="#projects" class="btn btn-primary">
+                        Explore Projects
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Let's Connect
+                    </a>
+
+                    <a href="assets/resume/Suraj_Patel_Resume.pdf" class="btn btn-secondary" target="_blank"
+                        rel="noopener noreferrer">
+                        View Resume →
+                    </a>
+
+                </div>
+
+
+                <div class="hero-tech">
+
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>Machine Learning</span>
+                    <span>Power BI</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual" aria-hidden="true">
+
+                <div class="data-core">
+                    DS
+                </div>
+
+
+                <div class="orbit orbit-one">
+
+                    <span class="orbit-node node-one">
+                        Data Analyst
+                    </span>
+
+                    <span class="orbit-node node-two">
+                        Data Engineer
+                    </span>
+
+                </div>
+
+
+                <div class="orbit orbit-two">
+
+                    <span class="orbit-node node-one">
+                        ML Engineer
+                    </span>
+
+                    <span class="orbit-node node-two">
+                        AI Engineer
+                    </span>
+
+                </div>
+
+
+                <div class="orbit orbit-three">
+
+                    <span class="orbit-node node-one">
+                        Data Scientist
+                    </span>
+
+                    <span class="orbit-node node-two">
+                        AI / ML
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             STATS
+        ================================================== -->
+
+        <section class="stats">
+
+            <div class="stat">
+
+                <strong>03+</strong>
+                <span>Projects</span>
+
+            </div>
+
+            <div class="stat">
+
+                <strong>03+</strong>
+                <span>Certifications</span>
+
+            </div>
+
+            <div class="stat">
+
+                <strong>10+</strong>
+                <span>Core Technologies</span>
+
+            </div>
+
+            <div class="stat">
+
+                <strong>∞</strong>
+                <span>Continuous Learning</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             PROJECTS
+        ================================================== -->
+
+        <section class="section projects-section" id="projects">
+
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    SELECTED WORK
+                </p>
+
+                <h2>
+                    Featured
+                    <span>Projects</span>
+                </h2>
+
+                <p>
+                    A selection of practical projects focused on data
+                    analysis, machine learning, automation and
+                    data-driven problem solving.
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <!-- PROJECT 01 -->
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        01
+                    </span>
+
+                    <div class="project-content">
+
+                        <p class="project-category">
+                            MACHINE LEARNING
+                        </p>
+
+                        <h3>
+                            Movie Recommendation System
+                        </h3>
+
+                        <p>
+                            A content-based recommendation system that
+                            analyzes movie information and recommends
+                            similar movies based on user selection.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Scikit-learn</span>
+                            <span>TMDb API</span>
+
+                        </div>
+
+
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 02 -->
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        02
+                    </span>
+
+                    <div class="project-content">
+
+                        <p class="project-category">
+                            DATA ENGINEERING
+                        </p>
+
+                        <h3>
+                            Linux Data Processing Pipeline
+                        </h3>
+
+                        <p>
+                            A Linux-based data processing pipeline for
+                            cleaning, processing and organizing the
+                            Titanic dataset using Python, Pandas and
+                            shell commands.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>Python</span>
+                            <span>Numpy</span>
+                            <span>Pandas</span>
+                            <span>Linux</span>
+                            <span>Bash</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+
+                        </div>
+
+
+                        <a href="https://github.com/Surajaap/linux-data-processing-pipeline" class="project-link"
+                            target="_blank" rel="noopener noreferrer">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 03 -->
+
+                <article class="project-card">
+
+                    <span class="project-number">
+                        03
+                    </span>
+
+                    <div class="project-content">
+
+                        <p class="project-category">
+                            SOFTWARE PROJECT
+                        </p>
+
+                        <h3>
+                            Online Course Registration System
+                        </h3>
+
+                        <p>
+                            A course registration system connecting
+                            frontend, backend and database components
+                            to manage course registration data.
+                        </p>
+
+
+                        <div class="project-tech">
+
+                            <span>Python</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Database</span>
+
+                        </div>
+
+
+                        <a href="#" class="project-link">
+                            View Project →
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SKILLS
+        ================================================== -->
+
+        <section class="section" id="skills">
+
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    TECHNICAL TOOLKIT
+                </p>
+
+                <h2>
+                    Skills &
+                    <span>Technologies</span>
+                </h2>
+
+                <p>
+                    Technologies and tools I use to analyze data,
+                    build machine learning solutions and develop
+                    practical data-driven applications.
+                </p>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">
+                        01
+                    </span>
+
+                    <p class="skill-category">
+                        PROGRAMMING
+                    </p>
+
+                    <h3>
+                        Programming & Data
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>Python</span>
+                        <span>SQL</span>
+                        <span>Bash</span>
+                        <span>Pandas</span>
+                        <span>NumPy</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">
+                        02
+                    </span>
+
+                    <p class="skill-category">
+                        ANALYTICS
+                    </p>
+
+                    <h3>
+                        Data Analysis
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>Excel</span>
+                        <span>Power BI</span>
+                        <span>Matplotlib</span>
+                        <span>Seaborn</span>
+                        <span>Data Cleaning</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">
+                        03
+                    </span>
+
+                    <p class="skill-category">
+                        MACHINE LEARNING
+                    </p>
+
+                    <h3>
+                        ML & Data Science
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>Scikit-learn</span>
+                        <span>Regression</span>
+                        <span>Classification</span>
+                        <span>EDA</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">
+                        04
+                    </span>
+
+                    <p class="skill-category">
+                        DEVELOPMENT
+                    </p>
+
+                    <h3>
+                        Development
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>FastAPI</span>
+                        <span>REST API</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">
+                        05
+                    </span>
+
+                    <p class="skill-category">
+                        TOOLS
+                    </p>
+
+                    <h3>
+                        Tools & Workflow
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Jupyter</span>
+                        <span>VS Code</span>
+                        <span>Linux</span>
+
+                    </div>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span class="skill-number">
+                        06
+                    </span>
+
+                    <p class="skill-category">
+                        CONCEPTS
+                    </p>
+
+                    <h3>
+                        Data Concepts
+                    </h3>
+
+                    <div class="skill-tags">
+
+                        <span>EDA</span>
+                        <span>Data Visualization</span>
+                        <span>Feature Engineering</span>
+                        <span>Data Processing</span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             EXPERIENCE
+        ================================================== -->
+
+        <section class="section" id="experience">
+
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    EXPERIENCE
+                </p>
+
+                <h2>
+                    Professional
+                    <span>Experience</span>
+                </h2>
+
+            </div>
+
+
+            <article class="experience-card">
+
+                <div class="experience-date">
+                    2025
+                </div>
+
+
+                <div class="experience-content">
+
+                    <p class="experience-company">
+                        SEO / DIGITAL MARKETING INTERNSHIP
+                    </p>
+
+                    <h3>
+                        SEO & Digital Marketing Intern
+                    </h3>
+
+                    <p>
+                        Worked on practical SEO activities including
+                        keyword research, on-page optimization,
+                        content optimization and search visibility
+                        improvement.
+                    </p>
+
+
+                    <div class="project-tech">
+
+                        <span>SEO</span>
+                        <span>Keyword Research</span>
+                        <span>On-Page SEO</span>
+                        <span>Google Search Console</span>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- =================================================
+             EDUCATION
+        ================================================== -->
+
+        <section class="section" id="education">
+
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    EDUCATION
+                </p>
+
+                <h2>
+                    Academic
+                    <span>Background</span>
+                </h2>
+
+            </div>
+
+            <div class="education-grid">
+
+                <!-- MCA -->
+                <article class="education-card">
+
+                    <span class="education-year">
+                        MCA
+                    </span>
+
+                    <h3>
+                        Master of Computer Applications
+                    </h3>
+
+                    <p>
+                        Lovely Professional University
+                    </p>
+
+                    <p>
+                        Data Science Specialization
+                    </p>
+
+                    <a href="#" class="certificate-link" target="_blank" rel="noopener noreferrer">
+                        View Certificate →
+                    </a>
+
+                </article>
+
+
+                <!-- BCA -->
+                <article class="education-card">
+
+                    <span class="education-year">
+                        BCA
+                    </span>
+
+                    <h3>
+                        Bachelor of Computer Applications
+                    </h3>
+
+                    <p>
+                        Raj School of Management and Sciences, Varanasi
+                    </p>
+
+                    <p>
+                        Computer Applications
+                    </p>
+
+                    <a href="#" class="certificate-link" target="_blank" rel="noopener noreferrer">
+                        View Certificate →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- =================================================
+             ABOUT
+        ================================================== -->
+
+        <section class="section" id="about">
+
+            <div class="section-header">
+
+                <p class="eyebrow">
+                    ABOUT ME
+                </p>
+
+                <h2>
+                    Building With
+                    <span>Data</span>
+                </h2>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p>
+                    I am a Data Science professional with an interest
+                    in data analytics, machine learning and practical
+                    data-driven applications. I enjoy working with
+                    data to discover patterns, generate insights and
+                    solve real-world problems.
+                </p>
+
+                <p>
+                    My current focus is strengthening my technical
+                    foundation across Python, SQL, data analysis,
+                    visualization, machine learning and modern
+                    development tools while continuously building
+                    practical projects.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="contact-wrapper">
+
+                <p class="eyebrow">
+                    LET'S CONNECT
+                </p>
+
+                <h2>
+                    Have a project or
+                    <span>opportunity?</span>
+                </h2>
+
+                <p>
+                    I'm open to discussing data projects, opportunities,
+                    collaborations and ideas related to data science
+                    and technology.
+                </p>
+
+
+                <div class="contact-actions">
+
+                    <a href="mailto:surajp4858@gmail.com" class="btn btn-primary">
+                        Email Me
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/suraj-patell/" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-secondary">
+                        LinkedIn
+                    </a>
+
+                    <a href="https://github.com/Surajaap" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-secondary">
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <p>
+                SURAJ PATEL
+            </p>
+
+            <p class="copyright">
+                © <span data-year></span> Suraj Patel. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script type="module" src="js/three-scene.js"></script>
+    <script type="module" src="data/projects.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
