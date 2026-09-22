@@ -263,7 +263,7 @@ img {
     width: min(var(--container), 94%);
 
     margin: 0 auto;
-    padding: 110px 0;
+    padding: 60px 0;
 }
 
 .section-header {
@@ -486,6 +486,22 @@ img {
 .btn-secondary:hover {
     border-color: var(--heading);
     background: rgba(44, 0, 5, 0.5);
+}
+
+
+/* Phone Button */
+
+.btn-phone {
+    border: 1px solid rgba(227, 152, 8, 0.35);
+    background: rgba(255, 255, 255, 0.015);
+    color: var(--heading) !important;
+    text-decoration: none;
+}
+
+.btn-phone:hover {
+    border-color: var(--heading);
+    background: rgba(44, 0, 5, 0.5);
+    color: var(--heading) !important;
 }
 
 
@@ -898,7 +914,7 @@ img {
     height: auto;
 
     margin-top: 0;
-    padding-top: 70px;
+    padding-top: 110px;
 }
 
 .skills-grid {
