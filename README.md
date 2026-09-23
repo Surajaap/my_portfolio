@@ -44,10 +44,13 @@ This portfolio highlights my technical skills, academic background, projects, an
 
 ## Project Structure
 
+```text
 Portfolio/
 |
 |-- public/
+|   |
 |   |-- assets/
+|       |
 |       |-- icons/
 |       |-- images/
 |       |-- resume/
@@ -56,10 +59,12 @@ Portfolio/
 |-- data/
 |-- js/
 |-- pages/
+|
 |-- index.html
 |-- package.json
 |-- README.md
 |-- .gitignore
+```
 
 ## Run Locally
 
